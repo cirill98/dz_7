@@ -44,8 +44,8 @@ Console.WriteLine("Enter n:");
 int n = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Enter m:");
 int m = Convert.ToInt32(Console.ReadLine());
-int [,]arr=new int [n, m];
-int []sum=new int [m];
+int [,]arr = new int [n, m];
+int []sum = new int [m];
 
 
 for (int i = 0; i < n; i++)
@@ -59,16 +59,16 @@ for (int i = 0; i < n; i++)
     Console.WriteLine();
 }
 
-for (int i=0; i<m; i++)
+for (int i = 0; i < m; i++)
 {
-    for(int j=0; j<n; j++)
+    for(int j = 0; j < n; j++)
     {
         sum[i] += arr[j, i];
     }
 }
 Console.WriteLine();
 
-for (int i=0; i<m; i++)
+for (int i = 0; i < m; i++)
 {
     Console.Write((sum[i] / n)  + "\t");
 }
